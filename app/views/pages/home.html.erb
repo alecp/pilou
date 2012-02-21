@@ -1,0 +1,25 @@
+<h1>10 Jours pour pitcher!</h1>
+
+
+	  
+<p>Ce programme vous permettra d'établir un pitch percutant lors de vos futures présentation, de préparer le pitch qui tue, de vous préparer psychologiquement à cette épreuve mais aussi de faire de vous le futur Xavier Niel de la présentation.</p>
+      <p>Grâce au conseil et coach 
+      <a href="#Yuno" data-rel="dialog"  data-transition="pop">YuNO</a> et en se  basant sur <a href="#orateur" data-rel="dialog" data-transition="pop">les meilleurs orateurs</a>, mais aussi par le suivi régulier et l'intéractivité de notre plateforme.</p>
+      <p>Vous serez  prêt à passez devant: <br> 
+        - Un public <br>
+        - Devant vos futurs clients <br>- Investisseurs</p>
+      <p>En établissant un pitch qui sera percutant par son contenu mais aussi par la présentation de celui-ci, en developpant votre charisme. </p>
+<p>Ce programme est fait pour vous!</p>
+     
+
+ <% if user_signed_in? %>
+       En tant que <%= current_user.email %>. Ce n'est pas vous?
+      <%= link_to "Déconnextion ", destroy_user_session_path, :method => :delete %>
+   <% else %>
+      <%= link_to "Inscription", new_user_registration_path %> or <%= link_to "Déja inscrit?", new_user_session_path %>
+   <% end %>
+ <p>  
+ <% if user_signed_in? %>
+    <%= link_to "Jour 1" %>
+	<% else %>
+	<% end %></p>
